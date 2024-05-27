@@ -1,0 +1,48 @@
+/* Hero Section */
+.hero__section {
+  display: grid;
+  position: relative;
+  grid-template-areas: "hero";
+  grid-gap: 20px;
+  overflow: hidden;
+  height: calc(150px + 15vw);
+  border-bottom: 5px solid var(--green);
+}
+
+/* .hero__section img {
+  position: absolute;
+  grid-area: hero;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+} */
+
+.hero__section video {
+  position: absolute;
+  grid-area: hero;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: center -9vw;
+  filter: brightness(40%);
+}
+
+.hero__section h1 {
+  grid-area: hero;
+  z-index: 1;
+  color: white;
+  font-size: calc(2rem + 4vw);
+  justify-self: center;
+  align-self: center;
+  opacity: 0;
+  transform: translateY(4rem);
+  animation: fadeInUp 2s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

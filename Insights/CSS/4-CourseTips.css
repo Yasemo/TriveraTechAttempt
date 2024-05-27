@@ -1,0 +1,136 @@
+/* Course Tips Section */
+
+.courseTips__section {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  grid-template-rows: minmax(0, 1fr);
+  background-color: var(--bg-lighter-blue);
+
+}
+
+.course__tips {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+}
+
+.course__tips h1 {
+  width: 90%;
+  font-size: var(--h1_font_size);
+  margin: 0 0 15px 0;
+}
+
+.quickTips__grid {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(0, 1fr);
+  grid-gap: 20px;
+
+}
+
+.quickTips__subGrid {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-left: 1px solid var(--blue);
+  box-sizing: border-box;
+  border: 0.1rem solid rgb(201, 201, 201);
+  border-radius: 7px;
+  box-shadow: 0 0 0.5rem 0 rgba(56, 56, 56, 0.1);
+  padding: 3%;
+  font-size: var(--s_para_font_size);
+  line-height: var(--s_para_line_height);
+
+  & a {
+    margin-left: auto;
+  }
+}
+
+.subGrid__left {
+  border-left: 10px solid var(--green);
+}
+
+.subGrid__right {
+  border-left: 10px solid var(--orange);
+}
+
+.view__all {
+  margin-top: 20px;
+  font-size: var(--m_para_font_size);
+}
+
+.view__all:hover {
+  text-decoration: underline;
+}
+
+.tips__img {
+  display: grid;
+  position: relative;
+  grid-template-areas: "image";
+  justify-items: center;
+  align-items: center;
+  padding: 70px;
+}
+
+.img_1 {
+  position: relative;
+  grid-area: image;
+  width: calc(15rem + 15vw);
+  height: calc(7rem + 11vw);
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  top: -20%;
+  left: -13%;
+}
+
+
+.img_2 {
+  position: relative;
+  grid-area: image;
+  width: calc(13rem + 15vw);
+  height: calc(13rem + 15vw);
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.3);
+  top: 10%;
+  right: -15%;
+  transform: scaleX(-1);
+}
+
+@media (max-width: 1070px) {
+  .courseTips__section {
+    grid-template-columns: 1fr;
+  }
+
+  .tips__img {
+    margin-top: 20px;
+    padding: 0 0 100px 0;
+  }
+}
+
+@media (max-width: 499px) {
+  .tips__img {
+    width: 90%;
+    padding: 0 10px 70px 10px;
+  }
+
+  .img_1 {
+    width: calc(13rem + 10vw);
+    height: calc(7rem + 10vw);
+    top: -15%;
+    left: -7%;
+  }
+
+  .img_2 {
+    width: calc(13rem + 10vw);
+    height: calc(13rem + 10vw);
+    top: 10%;
+    right: -10%;
+  }
+}

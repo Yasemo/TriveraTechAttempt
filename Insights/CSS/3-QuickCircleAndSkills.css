@@ -1,0 +1,242 @@
+/* Quick Circle Section */
+
+.quickCircle__section {
+  height: 0;
+}
+
+.quickSkills__circle {
+  display: flex;
+  width: calc(5rem + 8vw);
+  height: calc(5rem + 8vw);
+  background-color: var(--green);
+  border-radius: 50%;
+  position: relative;
+  top: -20px;
+  left: 10%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: calc(1rem + 2vw);
+  z-index: 2;
+  line-height: 1;
+  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  /* Cursor */
+  animation: none;
+  /* Initially no animation */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes untyping {
+  from {
+    width: 100%;
+  }
+
+  to {
+    width: 0;
+  }
+}
+
+
+/* Quick Skills Section */
+.quickSkills__section {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr);
+  grid-template-areas:
+    "picture text"
+    "picture carousel"
+    "picture button";
+  grid-template-columns: 0.5fr 1fr;
+}
+
+.quickSkills__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0 5% 5%;
+  grid-area: picture;
+  overflow: hidden;
+}
+
+.img_container {
+  height: calc(15rem + 10vw);
+  width: calc(12rem + 10vw);
+}
+
+.img_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.quickSkills__text {
+  grid-area: text;
+  padding: 5% 5% 0 5%;
+}
+
+.quickSkills__text h2 {
+  color: var(--blue);
+  font-size: var(--h2_font_size);
+}
+
+.quickSkills__text p {
+  font-size: var(--m_para_font_size);
+  line-height: var(--m_para_line_height);
+}
+
+.quickSkills__carousel {
+  grid-area: carousel;
+  padding: 2% 0 0 0;
+}
+
+.carousel__container {
+  display: flex;
+  width: 95%;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  margin-inline: auto;
+}
+
+.carouselGrid {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  justify-content: space-between;
+}
+
+.carousel-item {
+  width: 32%;
+  height: 110px;
+  display: flex;
+  box-sizing: border-box;
+  text-align: center;
+  border: 0.1rem solid rgb(201, 201, 201);
+  border-radius: 7px;
+  box-shadow: 0 0 0.5rem 0 rgba(56, 56, 56, 0.1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item h4 {
+  font-size: calc(0.5rem + 0.8vw);
+  margin: 0;
+  border-radius: 7px 7px 0 0;
+  font-weight: 500;
+  padding: 3px;
+}
+
+.carousel-item p {
+  font-size: var(--s_para_font_size);
+  line-height: var(--s_para_line_height);
+  margin: 0;
+  padding: 10px;
+}
+
+.carousel-button {
+  background-color: transparent;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1;
+  margin: 6px;
+}
+
+.left-button {
+  left: 0;
+}
+
+.right-button {
+  right: 0;
+}
+
+.quickSkills__button {
+  grid-area: button;
+  padding: 4% 5% 5% 5%;
+}
+
+.quickSkills__button button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  letter-spacing: 0.8px;
+  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.2);
+  font-size: calc(1rem + 0.7vw);
+  font-weight: 550;
+  margin-inline: auto;
+}
+
+.quickSkills__button p {
+  margin-inline: auto;
+  text-align: center;
+  font-size: var(--s_para_font_size);
+  line-height: var(--s_para_line_height);
+}
+
+@media (max-width: 800px) {
+  .quickSkills__section {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "picture text"
+      "carousel carousel"
+      "button button";
+  }
+
+  .quickSkills__img .img_container .quickSkills__circle {
+    top: clamp(46%, 150vw, 47%);
+    left: 10%;
+  }
+}
+
+@media (max-width: 545px) {
+  .quickSkills__section {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "picture"
+      "text"
+      "carousel"
+      "button";
+  }
+
+  .quickSkills__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: picture;
+    overflow: hidden;
+    padding: 10% 0 0 0;
+  }
+
+  .img_container {
+    height: calc(10rem + 15vw);
+    width: calc(10rem + 15vw);
+  }
+
+  .quickSkills__img .img_container .quickSkills__circle {
+    top: clamp(40%, 160vw, 40%);
+    left: 15%;
+  }
+}
+
+@media (max-width: 500px) {
+  .carousel-item {
+    width: 49%;
+  }
+}
