@@ -31,3 +31,65 @@
   font-weight: 600;
   font-size: 0.8rem;
 }
+
+/* Font sizes */
+
+:root {
+  --m_para_font_size: calc(0.6rem + 0.4vw);
+  --m_para_line_height: calc(1rem + 0.4vw);
+  --s_para_font_size: calc(0.6rem + 0.2vw);
+  --s_para_line_height: calc(0.5rem + 0.5vw);
+  --h1_font_size: calc(0.8rem + 2vw);
+  --h2_font_size: calc(0.5rem + 1.5vw);
+  --h4_font_size: calc(0.5rem + 1.2vw);
+}
+
+
+
+
+
+
+
+/* body {
+  font-size: 0.9rem;
+}
+
+.hero__section h1 {
+  font-size: calc(2rem + 2vw);
+}
+
+.whatsNew__section h1 {
+  font-size: calc(0.7rem + 2vw);
+}
+
+.whatsNew__buttons button {
+  font-size: calc(0.5rem + 0.7vw);
+}
+
+.quickSkills__circle {
+  font-size: calc(1rem + 2vw);
+}
+
+.quickSkills__text h2 {
+  font-size: calc(0.7rem + 1.3vw);
+}
+
+.quickSkills__button button {
+  font-size: calc(1rem + 0.7vw);
+}
+
+.course__tips h1 {
+  font-size: calc(0.7rem + 2vw);
+}
+
+.quickTips__subGrid {
+  font-size: calc(0.5rem + 0.4vw);
+}
+
+.learnersThink_section h1 {
+  font-size: calc(0.7rem + 2vw);
+}
+
+.testemonial__container p {
+  font-size: calc(0.7rem + 0.8vw);
+} */

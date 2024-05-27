@@ -50,7 +50,7 @@ p {
   grid-area: hero;
   z-index: 1;
   color: white;
-  font-size: calc(2rem + 2vw);
+  font-size: calc(2rem + 4vw);
   justify-self: center;
   align-self: center;
 }
@@ -63,14 +63,23 @@ p {
   grid-template-rows: minmax(0, 1fr);
   background-color: var(--grey);
   z-index: 1;
+
 }
 
-.whatsNew__section video {
-  justify-self: center;
-  align-self: center;
-  width: 90%;
+.iframe {
+  min-height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 5px;
-  padding: 5% 0;
+  padding: 5%;
+}
+
+.iframe iframe {
+  width: 90%;
+  height: 90%;
+  border: none;
+  border-radius: 7px;
 }
 
 .whatsNew__content {
@@ -79,15 +88,21 @@ p {
   padding: 5% 5% 10% 5%;
 }
 
+.whatsNew__content p {
+  font-size: var(--m_para_font_size);
+  line-height: var(--m_para_line_height);
+}
+
 .whatsNew__section h5 {
   color: var(--orange);
   font-weight: 600;
   margin: 0;
+  font-size: var(--h4_font_size);
 }
 
 .whatsNew__section h1 {
   width: 100%;
-  font-size: calc(0.7rem + 2vw);
+  font-size: var(--h1_font_size);
   white-space: nowrap;
   margin: 15px 0 0 0;
 }
@@ -188,11 +203,12 @@ p {
 
 .quickSkills__text h2 {
   color: var(--blue);
-  font-size: calc(0.7rem + 1.3vw);
+  font-size: var(--h2_font_size);
 }
 
 .quickSkills__text p {
-  line-height: 1.4rem;
+  font-size: var(--m_para_font_size);
+  line-height: var(--m_para_line_height);
 }
 
 .quickSkills__carousel {
@@ -206,11 +222,21 @@ p {
   align-items: center;
   overflow: hidden;
   position: relative;
+
+}
+
+.carouselGrid {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
   justify-content: space-between;
 }
 
 .carousel-item {
-  width: 30%;
+  width: 32%;
+  height: 110px;
   display: flex;
   box-sizing: border-box;
   text-align: center;
@@ -221,10 +247,18 @@ p {
 }
 
 .carousel-item h4 {
+  font-size: calc(0.5rem + 0.8vw);
   margin: 0;
   border-radius: 7px 7px 0 0;
   font-weight: 500;
   padding: 3px;
+}
+
+.carousel-item p {
+  font-size: var(--s_para_font_size);
+  line-height: var(--s_para_line_height);
+  margin: 0;
+  padding: 10px;
 }
 
 .carousel-button {
@@ -246,7 +280,7 @@ p {
 
 .quickSkills__button {
   grid-area: button;
-  padding: 5% 5% 5% 5%;
+  padding: 4% 5% 5% 5%;
 }
 
 .quickSkills__button button {
@@ -264,7 +298,8 @@ p {
 .quickSkills__button p {
   margin-inline: auto;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: var(--s_para_font_size);
+  line-height: var(--s_para_line_height);
 }
 
 @media (max-width: 800px) {
@@ -314,7 +349,7 @@ p {
 
 @media (max-width: 500px) {
   .carousel-item {
-    min-width: 40%;
+    width: 49%;
   }
 }
 
@@ -337,7 +372,7 @@ p {
 
 .course__tips h1 {
   width: 90%;
-  font-size: calc(0.7rem + 2vw);
+  font-size: var(--h1_font_size);
   white-space: nowrap;
   margin: 0 0 15px 0;
 }
@@ -361,7 +396,8 @@ p {
   border-radius: 7px;
   box-shadow: 0 0 0.5rem 0 rgba(56, 56, 56, 0.1);
   padding: 3%;
-  font-size: calc(0.5rem + 0.4vw);
+  font-size: var(--s_para_font_size);
+  line-height: var(--s_para_line_height);
 
   & a {
     margin-left: auto;
@@ -378,6 +414,11 @@ p {
 
 .view__all {
   margin-top: 20px;
+  font-size: var(--m_para_font_size);
+}
+
+.view__all:hover {
+  text-decoration: underline;
 }
 
 .tips__img {
@@ -386,7 +427,7 @@ p {
   grid-template-areas: "image";
   justify-items: center;
   align-items: center;
-  padding: 100px;
+  padding: 70px;
 }
 
 .img_1 {
@@ -460,14 +501,13 @@ p {
   grid-template-columns: 0.6fr 1fr;
   justify-items: center;
   align-items: center;
+  text-align: center;
 }
 
 .learnersThink_section h1 {
-  width: 90%;
-  font-size: calc(0.7rem + 2vw);
+  width: 60%;
+  font-size: var(--h1_font_size);
   color: white;
-  padding-left: 20%;
-  padding-right: 20%;
 }
 
 .testemonial__container {
@@ -480,8 +520,8 @@ p {
   & p {
     text-align: center;
     color: white;
-    font-size: calc(0.7rem + 0.3vw);
-    line-height: 1.6rem;
+    font-size: calc(0.7rem + 0.8vw);
+    line-height: calc(1rem + 0.8vw);
   }
 }
 
