@@ -160,7 +160,33 @@ p {
   line-height: 1;
   box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.3);
   font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  /* Cursor */
+  animation: none;
+  /* Initially no animation */
 }
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes untyping {
+  from {
+    width: 100%;
+  }
+
+  to {
+    width: 0;
+  }
+}
+
 
 /* Quick Skills Section */
 .quickSkills__section {
