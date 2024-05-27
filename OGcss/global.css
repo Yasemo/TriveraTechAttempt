@@ -1,0 +1,563 @@
+@import url(https://fonts.googleapis.com/css?family=Walter+Turncoat);
+
+html {
+    font-family: "Lato", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    background-color: white;
+    cursor: default;
+}
+
+.arrow-icon {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 3px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;    
+}
+
+/* BANNER STYLES */
+
+.banner {
+    height: 3.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    background-color: #A7D86B;
+}
+
+.banner-item {
+    display: inline-block;
+    position: relative;
+    top: 0.5rem;
+    height: 1.5rem;
+    margin-right: 2rem;
+}
+
+.banner-item-social {
+    float: right;
+    height: 1rem;
+    margin-right: 0.75rem;
+}
+
+.banner-item-social.facebook {
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.banner-item-social.twitter {
+    margin-top: 0.65rem;
+}
+
+.banner-item-social.linkedin {
+    margin-top: 0.5rem;
+}
+
+.banner-item-social.youtube {
+    margin-top: 0.75rem;
+    margin-right: 0;
+}
+
+.banner-icon {
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+.banner-icon-text {
+    display: inline-block;
+    position: relative;
+    top: -0.3rem;
+}
+
+.banner-email {
+    display: inline-block;
+    position: relative;
+}
+
+/* NAV STYLES */
+
+.navbar {
+    height: 6rem;
+    border-bottom: 0.1rem solid #EEEEEE;
+}
+
+.navbar .logo {
+    position: relative;
+    top: 1rem;
+    height: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.navbar .nav-items {
+    display: inline-block;
+}
+
+.navbar .nav-item {
+    display: inline-block;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.navbar .nav-item a {
+    text-decoration: none;
+}
+
+.navbar .nav-item a:visited {
+    color: #000000;
+}
+
+.navbar .nav-item-icon {
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+}
+
+.navbar .dropdown-menu {
+    margin:0;
+    padding: 0;
+    list-style: none;
+    background-color: #F2FCFF;
+    color: #D1ECF6
+}
+
+.navbar .dropdown-menu > li {
+    display: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.navbar .callus {
+    float: right;
+    position: relative;
+    top: 2.1rem;
+    right: 6rem;
+}
+
+.navbar .callus .icon-headset {
+    display: inline-block;
+    height:2rem;
+    width:2rem;
+    filter: invert(61%) sepia(17%) saturate(1046%) hue-rotate(152deg) brightness(95%) contrast(98%);
+}
+
+.navbar .callus .number {
+    display: inline-block;
+}
+
+.navbar .search {
+    float: right;
+    position: relative;
+    top: 2.1rem;
+    right: 4rem;
+}
+
+.navbar .icon-search {
+    height: 2rem;
+    width: 2rem;
+}
+
+.navbar .icon-cart {
+    float: right;
+    position: relative;
+    top: 2.1rem;
+    right: 2rem;
+    height: 2rem;
+    width: 2rem;
+}
+
+/* WAYS TO LEARN */
+
+.ways-to-learn {
+    padding: 5rem 5% 10rem 5%;
+    background-color: #000000;
+}
+
+.ways-to-learn .el1 {
+}
+
+.ways-to-learn .el2 {
+    position: relative;
+}
+
+.ways-to-learn .el3 {
+    width: 100%;
+    padding-bottom: 1.5rem;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.ways-to-learn .el4 {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.ways-to-learn .el5 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.ways-to-learn .el6 {
+    display: inline-block;
+    width: 58rem;
+    padding: 1.5rem 0;
+    border-radius: 0.5rem;
+    background-color: #57A7C8;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.ways-to-learn .el7 {
+    padding-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.ways-to-learn .el8 {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.ways-to-learn .el9 {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.ways-to-learn .el10 {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #A7D86B;
+    text-decoration: none;
+}
+
+/* SPECIAL OFFER */
+
+.special-offer {
+    padding: 5rem 5% 5rem 5%;
+    background-color: #000000;
+}
+
+.special-offer .container {
+    height: 13rem;
+    width: 80%;
+    border-radius: 0.5rem;
+}
+
+.special-offer .offer-image {
+    height: 100%;
+}
+
+.special-offer .offer-details {
+    position: relative;
+    top: -2.25rem;
+    height: 100%;
+    box-sizing: border-box;
+    border-left: 0.5rem solid #57A7C8;
+}
+
+.special-offer .offer-description {
+    max-width: 30rem;
+}
+
+/* KEEP ME INFORMED */
+
+.keep-me-informed {
+    height: 5.5rem;
+    padding: 5rem 5% 5rem 5%;
+    background-color: #FFFFFF;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 5rem 5% 5rem 5%;
+    border-top: 1rem solid #A7D86B;
+    background-color: #FFFFFF;
+}
+
+/* SKILLJOURNEYS LIST */
+
+.skilljourneys-list {
+
+    .skilljourney {
+        position: relative;
+        height: 15rem;
+        .image {
+            position: absolute;
+            height: 12rem;
+        }
+        .title {
+            position: absolute;
+            top: 2rem;
+            left: 25rem;
+            font-size: 2rem;
+            font-weight: 600;            
+        }
+        .summary {
+            position: absolute;
+            left: 25rem;
+            bottom: 4rem;
+            font-weight: 600;
+        }
+        .link {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-weight: 600;
+        }
+    }
+}
+
+/* COURSE CARD */
+
+.course-card {
+    height: 19rem;
+    width: 18rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.1);
+
+    .status {
+        border-radius: 0.5rem 0.5rem 0 0;
+        padding: 0.2rem 0.5rem;
+        text-align: center;
+        font-size: 0.8rem;
+        font-weight: 600;
+        background-color: #D1ECF6;
+    }
+
+    .status-gtr {
+        padding: 0.5rem;
+        background-color: #A7D86B;
+        color: #FFFFFF;
+    }
+
+    .status-pending {
+        padding: 0.5rem;
+        background-color: #F87706;
+        color: #FFFFFF;
+    }
+
+    .code {
+        padding: 0.3rem 0.75rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+        background-color: #D1ECF6;
+        color: #57A7C8;
+    }
+
+    .title {
+        height: 3.5rem;
+        padding: 0rem 0.75rem;
+        font-weight: 600;
+        background-color: #D1ECF6;
+    }
+
+    .container1 {
+        padding: 0.4rem 0.75rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+        background-color: #D1ECF6;
+        color: #57A7C8;
+
+        .level {
+            display: inline-block;
+            width: 5.3rem;            
+        }
+
+        .duration {
+            display: inline-block;
+            width: 5.3rem;
+            text-align: center;            
+        }
+
+        .price {
+            display: inline-block;
+            width: 5.3rem;
+            text-align: right;            
+        }
+    }
+
+    .course-summary {
+        height: 6.5rem;
+        padding: 0.4rem 0.75rem;
+    }
+
+    .details {
+        display: block;
+        padding-bottom: 0.5rem;
+        text-align: center;
+        text-decoration: none;
+        color: #57A7C8;
+        cursor: pointer;
+    }
+
+    .container2 {
+        padding: 0.4rem 0.75rem;
+
+        .container3 {
+            display: none;
+            position: relative;
+            width: 5.3rem;
+
+            .upcoming {
+                font-size: 0.8rem;
+                font-weight: 600;
+                color: #F87706;
+            }
+
+            .date {
+                font-weight: 600;
+            }
+        }
+
+        .container4 {
+            display: none;
+            position: relative;
+            top: -0.4rem;
+            line-height: 2rem;
+            width: 5.3rem;
+            text-align: center;
+            border-radius: 0.2rem;
+            font-weight: 600;
+            background-color: #D1ECF6;
+            color: #57A7C8;
+
+            .icon {
+                display: inline-block;
+                position: relative;
+                top: 0.11rem;
+                height: 1rem;
+                width: 1rem;
+                filter: invert(61%) sepia(17%) saturate(1046%) hue-rotate(152deg) brightness(95%) contrast(98%);
+            }
+
+            .dates {
+                display: inline-block;
+            }
+        }
+
+        .enroll {
+            display: none;
+            position: relative;
+            top: -0.4rem;
+            line-height: 2rem;
+            width: 5.3rem;
+            border-radius: 0.2rem;
+            text-align: center;
+            font-weight: 600;
+            background-color: #D1ECF6;
+            color: #57A7C8;
+        }
+
+        .show {
+            display: inline-block;
+        }
+
+        .span1 {
+            width: 5.3rem
+        }
+
+        .span2 {
+            width: 10.9rem
+        }
+        .span3 {
+            width: 100%
+        }    
+    }
+}
+
+
+/* CHECK BOX */
+
+[el-is='checkbox'] {
+    background: none;
+    border: 0;
+    height: 2rem;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+[el-is='checkbox'] .icon {
+    display: inline-block;
+    width: 1.2rem;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2224%22%20viewBox%3D%220%20-960%20960%20960%22%20width%3D%2224%22%3E%3Cpath%20stroke%3D%22%2357A7C8%22%20fill%3D%22%2357A7C8%22%20d%3D%22M200-120q-33%200-56.5-23.5T120-200v-560q0-33%2023.5-56.5T200-840h560q33%200%2056.5%2023.5T840-760v560q0%2033-23.5%2056.5T760-120H200Zm0-80h560v-560H200v560Z%22%2F%3E%3C%2Fsvg%3E" );
+}
+
+[el-is='checkbox'].is-checked .icon {
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2224%22%20viewBox%3D%220%20-960%20960%20960%22%20width%3D%2224%22%20fill%3D%22%232357A7%22%3E%3Cpath%20stroke%3D%22%23A7D86B%22%20fill%3D%22%23A7D86B%22%20d%3D%22m424-312%20282-282-56-56-226%20226-114-114-56%2056%20170%20170Zm0-560v560-560Z%22%2F%3E%3Cpath%20stroke%3D%22%2357A7C8%22%20fill%3D%22%2357A7C8%22%20d%3D%22M200-120q-33%200-56.5-23.5T120-200v-560q0-33%2023.5-56.5T200-840h560q33%200%2056.5%2023.5T840-760v560q0%2033-23.5%2056.5T760-120H200Zm0-80h560v-560H200v560Z%22%2F%3E%3C%2Fsvg%3E" );
+}
+
+[el-is='checkbox'] .label {
+    display: inline-block;
+    position: relative;
+    top: .5rem;
+    padding-left: .5rem;
+    font-size: .85rem;
+    font-weight: 500;
+}
+
+/* WAYS TO LEARN CARD */
+
+.card {
+    display: inline-block;
+    height: 11rem;
+    width: 13rem;
+    border-radius: 0.5rem;
+    padding: 0rem .5rem .5rem .5rem;    
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.card .tab {
+    position: relative;
+    top: -2.5rem;
+    left: 4rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
+
+.card .title {
+    position: relative;
+    top: -3.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #57A7C8;
+    cursor: pointer;
+}
+
+.card .title:hover {
+    color: #F87706;
+}
+
+.card .summary { 
+    position: relative;
+    top: -2.5rem;
+}
+
+.card.gap {
+    margin-left: 2rem;
+}
+
+.filter-header {
+    border-left: 0.1rem solid #F87706;
+    padding-left: 0.3rem;
+    margin-left: -0.37rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}

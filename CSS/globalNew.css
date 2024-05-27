@@ -1,0 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Walter+Turncoat);
+
+html {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    background-color: white;
+    cursor: default;
+}

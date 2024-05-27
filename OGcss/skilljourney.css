@@ -1,0 +1,206 @@
+#section1 {
+    position: relative;
+    border-bottom: 1rem solid #F87706;
+    background-image: url('/website/client/images/browsecourses-hero.png');
+    background-size: cover;
+
+    .veil {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: white;
+        opacity: 0.7;
+    }
+
+    .container {
+        position: relative;
+        padding: 5rem;
+
+        .header1 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .title {
+            width: 64rem;
+            margin-bottom: 2rem;
+            font-size: 6rem;
+            font-weight: 600;
+        }
+
+        .summary {
+            width: 58rem;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            background-color: #FFFFFF;
+            font-size: 1.5rem;
+            opacity: 0.5;    
+        }
+    }
+}
+
+#section2 {
+    position: relative;
+    background-color: #D1ECF6;
+
+    .container {
+        position: relative;
+        padding: 5rem;
+
+        .image {
+            height: 20rem;
+            width: 26.625rem;
+        }
+
+        .container2 {
+            position: absolute;
+            top: 6rem;
+            left: 35rem;
+            right: 5rem;
+
+            .header1 {
+                margin-bottom: 0.5rem;
+                font-size: 2rem;
+            }
+    
+            .header2 {
+                margin-bottom: 1rem;
+                font-size: 3rem; 
+            }
+
+            .overview {
+                line-height: 1.5rem;
+                padding-bottom: 1.5rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+#section3 {
+    position: relative;
+    background-color: #FFFFFF;
+
+    .container {
+        position: relative;
+        padding: 5rem;
+
+        .bullets {
+            height: 9rem;
+            width: 43rem;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.1);
+            background-color: #FFFFFF;
+
+            ul {
+                width: 100%;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            ul > li {
+                width: 43rem;            
+            }
+
+            li > div:nth-child(1) {
+                display: inline-block;
+                position: relative;
+                top: -1rem;
+                width: 1rem;
+                height: 1rem;
+                border-radius: 50%;
+                background: #A7D86B;
+                margin-right: 1rem;
+            }
+
+            li > div:nth-child(2) {
+                display: inline-block;
+                width: 40rem;
+                margin-bottom: 1rem;
+                margin-right: 1rem;
+            }
+        }
+
+        .bullet {
+            position: absolute;
+            top: 1.5rem;
+            right: 9rem;
+            height: 18rem;
+            width: 18rem;
+            padding: 1rem;
+            border-radius: 50%;
+            background-color: #A7D86B;
+            text-align: center;
+            
+            div {
+                position: relative;
+                top: 4rem;
+                font-size: 2.5rem;
+                font-weight: 600;
+                color: #FFFFFF
+            }
+
+            div:nth-child(2) {
+                color: #000000
+            }
+        }
+    }
+}
+
+#section4 {
+    position: relative;
+    background-color: #FFFFFF;
+
+    .container {
+        position: relative;
+        padding: 5rem;
+
+        .role {
+        }
+
+        .header {
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #F87706;
+        }
+
+        .name {
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #000000;
+        }
+
+        .summary {
+            margin-bottom: 1rem;
+            color: #000000;
+        }
+
+        .courses {
+            height: 21rem;
+
+            .main-gallery {
+                height: 100%;
+            }
+
+            .gallery-cell {
+                height: 20rem;
+                width: 18rem;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+            }
+
+            .flickity-prev-next-button.previous {
+                left: -4rem;
+            }
+
+            .flickity-prev-next-button.next {
+                right: -4rem;
+            }
+        }
+    }
+}

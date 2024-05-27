@@ -1,0 +1,33 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --text-color: #333333;
+  --black: #000000;
+  --bg-black: #000000;
+  --blue: #57A7C8;
+  --light-blue: #D1ECF6;
+  --bg-light-blue: #D1ECF6;
+  --bg-lighter-blue: #F2FCFF;
+  --green: #A7D86B;
+  --orange: #F87706;
+  --white: #FFFFFF;
+  --bg-white: #FFFFFF;
+  --grey: #EEEFF0;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border: none;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--blue);
+  border-radius: 0.2rem;
+  color: white;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
