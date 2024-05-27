@@ -1,0 +1,17 @@
+body {
+  position: relative;
+  container-type: inline-size;
+}
+
+/* .container {
+  width: 100%;
+  margin-inline: auto;
+  overflow: hidden;
+} */
+
+p {
+  font-size: var(--m_para_font_size);
+  line-height: 1.1rem;
+  max-width: 80ch;
+  word-spacing: 2px;
+}

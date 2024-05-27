@@ -1,26 +1,34 @@
 @import url(https://fonts.googleapis.com/css?family=Walter+Turncoat);
 
 html {
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    width: 100%;
-    background-color: white;
-    cursor: default;
+  margin: 0;
+  width: 100%;
+  background-color: white;
+  cursor: default;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 button:hover {
-    filter: brightness(1.1);
-    transform: scaleX(1.02);
+  filter: brightness(1.1);
+  transform: scaleX(1.02);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 
 
 
@@ -28,49 +36,50 @@ button:hover {
 /* VARIABLES */
 
 :root {
-    --primary-color: #007bff;
-    --secondary-color: #6c757d;
-    --text-color: #333333;
-    --black: #000000;
-    --bg-black: #000000;
-    --blue: #57A7C8;
-    --light-blue: #D1ECF6;
-    --bg-light-blue: #D1ECF6;
-    --bg-lighter-blue: #F2FCFF;
-    --green: #A7D86B;
-    --orange: #F87706;
-    --white: #FFFFFF;
-    --bg-white: #FFFFFF;
-    --grey: #EEEFF0;
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --text-color: #333333;
+  --black: #000000;
+  --bg-black: #000000;
+  --blue: #57A7C8;
+  --light-blue: rgb(221, 241, 248);
+  --bg-light-blue: #D1ECF6;
+  --bg-lighter-blue: #F2FCFF;
+  --green: #A7D86B;
+  --orange: #F87706;
+  --white: #FFFFFF;
+  --bg-white: #FFFFFF;
+  --grey: #f5f7f9;
 }
 
 .border {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
 .button {
-    padding: 0.5rem 1rem;
-    border: none;
-    font-size: 1rem;
-    text-align: center;
-    cursor: pointer;
-    background-color: var(--blue);
-    border-radius: 0.5rem;
-    color: white;
-    font-weight: 600;
-    font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--blue);
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 600;
+  font-size: 0.8rem;
 }
 
 /* Font sizes */
 
 :root {
-    --m_para_font_size: calc(0.6rem + 0.4vw);
-    --m_para_line_height: calc(1rem + 0.4vw);
-    --s_para_font_size: calc(0.6rem + 0.2vw);
-    --s_para_line_height: calc(0.5rem + 0.5vw);
-    --h1_font_size: calc(0.8rem + 2vw);
-    --h2_font_size: calc(0.5rem + 1.5vw);
-    --h4_font_size: calc(0.5rem + 1.2vw);
+  --m_para_font_size: calc(0.7rem + 0.4vw);
+  --m_para_line_height: calc(1rem + 0.4vw);
+  --s_para_font_size: calc(0.6rem + 0.2vw);
+  --s_para_line_height: calc(0.5rem + 0.5vw);
+  --h1_font_size: calc(0.8rem + 2vw);
+  --h2_font_size: calc(0.5rem + 1.5vw);
+  --h4_font_size: calc(0.5rem + 1.2vw);
+  --h5_font_size: calc(0.5rem + 1vw);
 }
 
 
