@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
           clearInterval(typingInterval);
           setTimeout(startUntyping, 1000); // Start untyping after a delay
         }
-      }, delay);
+      }, delay + 20);
     }
 
     function startUntyping() {
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
           clearInterval(typingInterval);
           setTimeout(startTyping, 1000); // Start typing after a delay
         }
-      }, delay);
+      }, delay - 30);
     }
 
     startTyping();
